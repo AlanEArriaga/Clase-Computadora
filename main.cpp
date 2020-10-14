@@ -28,18 +28,18 @@ int main()
 
     Laboratorio lb;
 
-    lb.agregaComputadora(c1);
+    /*lb.agregaComputadora(c1);
     lb.agregaComputadora(c2);
-    lb.agregaComputadora(c3);
-
-
+    lb.agregaComputadora(c3);*/
+    lb<<c1<<c2<<c3;
 
     //cout << c1;
 
     Computadora c4;
     cin>>c4;
+    lb << c4;
 
-    lb.agregaComputadora(c4);
+    //lb.agregaComputadora(c4);
     lb.mostrar();
 
     return 0;
