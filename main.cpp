@@ -1,3 +1,4 @@
+//Alan Abraham Echeveste Arriaga
 #include <iostream>
 #include "Laboratorio.h"
 
@@ -30,6 +31,8 @@ int main()
     lb.agregaComputadora(c1);
     lb.agregaComputadora(c2);
     lb.agregaComputadora(c3);
+
+    cout << c1;
 
     lb.mostrar();
     return 0;
