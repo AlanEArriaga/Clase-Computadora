@@ -30,6 +30,7 @@ public:
 
 
     friend ostream& operator<<(ostream &out, const Computadora &c){
+        out << left;
         out << setw(10) << c.sistema;
         out << setw(10) << c.marca;
         out << setw(3) << c.ram;
