@@ -32,8 +32,10 @@ int main()
     lb.agregaComputadora(c2);
     lb.agregaComputadora(c3);
 
-    cout << c1;
-
     lb.mostrar();
+
+    //cout << c1;
+
+
     return 0;
 }
