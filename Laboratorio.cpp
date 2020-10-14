@@ -17,9 +17,10 @@ void Laboratorio::agregaComputadora(const Computadora &c){
 void Laboratorio::mostrar(){
     for(size_t i = 0; i < cont; i++){
         Computadora &c = arreglo[i];
-        cout<<"SISTEMA OPERATIVO: "<<arreglo[i].getSistema()<<endl;
+        cout << c;
+        /*cout<<"SISTEMA OPERATIVO: "<<arreglo[i].getSistema()<<endl;
         cout<<"MARCA: "<<arreglo[i].getMarca()<<endl;
         cout<<"RAM: "<<arreglo[i].getRam()<<" GB"<<endl;
-        cout<<"CAPACIDAD: "<<arreglo[i].getCapacidad()<<" GB"<<endl<<endl;
+        cout<<"CAPACIDAD: "<<arreglo[i].getCapacidad()<<" GB"<<endl<<endl;*/
     }
 }
