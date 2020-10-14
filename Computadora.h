@@ -39,6 +39,23 @@ public:
 
         return out;
     }
+
+    friend istream& operator>>(istream &in, Computadora &c){
+        /*string temp;
+        int tempoInt;*/
+        cout << "Sistema operativo: ";
+        getline(cin, c.sistema);
+
+        cout << "Marca: ";
+        getline(cin, c.marca);
+
+        cout << "Memoria Ram en GB: ";
+        cin>> c.ram;
+
+        cout << "Capacidad en GB: ";
+        cin>> c.capacidad;
+        return in;
+    }
 };
 
 
