@@ -33,7 +33,7 @@ public:
         out << left;
         out << setw(10) << c.sistema;
         out << setw(10) << c.marca;
-        out << setw(3) << c.ram;
+        out << setw(6) << c.ram;
         out << setw(6) << c.capacidad;
         out << endl;
 
