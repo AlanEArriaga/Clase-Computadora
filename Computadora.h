@@ -2,6 +2,7 @@
 #define COMPUTADORA_H_INCLUDED
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 class Computadora{
@@ -29,10 +30,11 @@ public:
 
 
     friend ostream& operator<<(ostream &out, const Computadora &c){
-        out << c.sistema << endl;
-        out << c.marca << endl;
-        out << c.ram << endl;
-        out << c.capacidad << endl;
+        out << setw(10) << c.sistema;
+        out << setw(10) << c.marca;
+        out << setw(3) << c.ram;
+        out << setw(6) << c.capacidad;
+        out << endl;
 
         return out;
     }
