@@ -2,7 +2,6 @@
 
 Computadora::Computadora(){
 
-
 }
 
 Computadora::Computadora(const string &sistema, const string &marca, int ram, int capacidad){

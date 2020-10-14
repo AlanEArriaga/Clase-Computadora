@@ -26,6 +26,16 @@ public:
 
     void setCapacidad(int v);
     int getCapacidad();
+
+
+    friend ostream& operator<<(ostream &out, const Computadora &c){
+        out << c.sistema << endl;
+        out << c.marca << endl;
+        out << c.ram << endl;
+        out << c.capacidad << endl;
+
+        return out;
+    }
 };
 
 
