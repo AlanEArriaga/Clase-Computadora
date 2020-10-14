@@ -32,10 +32,15 @@ int main()
     lb.agregaComputadora(c2);
     lb.agregaComputadora(c3);
 
-    lb.mostrar();
+
 
     //cout << c1;
 
+    Computadora c4;
+    cin>>c4;
+
+    lb.agregaComputadora(c4);
+    lb.mostrar();
 
     return 0;
 }
