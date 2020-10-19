@@ -41,6 +41,8 @@ int main()
 
     //lb.agregaComputadora(c4);
     lb.mostrar();
+    lb.respaldar_tabla();
+    lb.respaldar();// linea por linea
 
     return 0;
 }
