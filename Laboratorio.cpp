@@ -1,4 +1,5 @@
 #include "Laboratorio.h"
+#include <fstream>
 
 Laboratorio::Laboratorio(){
     cont = 0;
@@ -29,4 +30,15 @@ void Laboratorio::mostrar(){
         cout<<"RAM: "<<arreglo[i].getRam()<<" GB"<<endl;
         cout<<"CAPACIDAD: "<<arreglo[i].getCapacidad()<<" GB"<<endl<<endl;*/
     }
+}
+
+void Laboratorio::respaldar(){
+    ofstream archivo("Computadoras.txt");
+    if(archivo.is_open()){
+       for(size_t i = 0; i < cont; i++){
+        Computadora &c = arreglo[i];
+        cout << c;
+       }
+    }
+    archivo.close();
 }
