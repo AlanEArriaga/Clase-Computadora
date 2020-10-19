@@ -62,3 +62,36 @@ void Laboratorio::respaldar(){
     }
     archivo.close();
 }
+
+void Laboratorio::recuperar(){
+    ifstream archivo("Computadoras.txt");
+    if(archivo.is_open()){
+        string temp;
+        int ram, capacidad;
+        Computadora c;
+
+        while(true)
+        {
+            getline(archivo, temp);//sistema
+            if(archivo.eof()){
+                break;
+            }
+            c.setSistema(temp);
+
+            getline(archivo, temp);//marca
+            c.setMarca(temp);
+
+            getline(archivo, temp);//ram
+            ram = stoi(temp);//string to int
+            c.setRam(ram);
+
+            getline(archivo, temp);//capacidad
+            capacidad = stoi(temp); //string to int
+            c.setCapacidad(capacidad);
+
+            agregaComputadora(c);
+        }
+
+    }
+    archivo.close();
+}
